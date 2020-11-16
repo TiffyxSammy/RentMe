@@ -5,7 +5,10 @@ $password = filter_input(INPUT_POST, 'password');
 $firstName = filter_input(INPUT_POST, 'firstName');
 $lastName = filter_input(INPUT_POST, 'lastName');
 $emailAddress = filter_input(INPUT_POST, 'emailAddress');
-$creditCard = filter_input(INPUT_POST, 'creditCard');
+$monthBday = filter_input(INPUT_POST, 'monthBday');
+$dayBday = filter_input(INPUT_POST, 'dayBday');
+$yearBday = filter_input(INPUT_POST, 'yearBday');
+/* $creditCard = filter_input(INPUT_POST, 'creditCard'); */
 
 
 // Validate inputs
@@ -20,7 +23,7 @@ require_once('database.php');
         if(($dup) >0){
             echo '<b>username Already Used.</b>';
         } else {
-            $query = 'INSERT INTO accounts (username, password, firstName, lastName, emailAddress, creditCard) VALUES (:username, :password, :firstName, :lastName, :emailAddress, :creditCard)';
+            $query = 'INSERT INTO accounts (username, password, firstName, lastName, emailAddress, monthBday, dayBday, yearBday) VALUES (:username, :password, :firstName, :lastName, :emailAddress, :monthBday, :dayBday, :yearBday)';
 
             $statement = $db->prepare($query);
             $statement->bindValue(':username', $username);
@@ -28,7 +31,10 @@ require_once('database.php');
             $statement->bindValue(':firstName', $firstName);
             $statement->bindValue(':lastName', $lastName);
             $statement->bindValue(':emailAddress', $emailAddress);
-            $statement->bindValue(':creditCard', $creditCard);
+            $statement->bindValue(':monthBday', $monthBday);
+            $statement->bindValue(':dayBday', $dayBday);
+            $statement->bindValue(':yearBday', $yearBday);
+/*             $statement->bindValue(':creditCard', $creditCard); */
             $statement->execute();
             $statement->closeCursor();
 
