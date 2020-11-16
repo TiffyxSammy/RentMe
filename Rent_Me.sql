@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 15, 2020 at 07:09 PM
+-- Generation Time: Nov 16, 2020 at 05:30 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -33,24 +33,18 @@ CREATE TABLE `accounts` (
   `password` varchar(255) NOT NULL,
   `firstName` text NOT NULL,
   `lastName` text NOT NULL,
-  `emailAddress` varchar(255) NOT NULL,
-  `creditCard` text NOT NULL
+  `emailAddress` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `accounts`
 --
 
-INSERT INTO `accounts` (`accountID`, `username`, `password`, `firstName`, `lastName`, `emailAddress`, `creditCard`) VALUES
-(1, 'sammysucks', 'samssams', 'Sammy', 'Vo', 'sammyvo@gmail.com', '1234123412341234'),
-(2, 'tiffany', 'tifftiff', 'Tiffany', 'Nguyen', 'tiffanynguyen@yahoo.com', '1111111111111111'),
-(3, 'sugardaddy', 'sammytran', 'Steven', 'Tran', 'steven&sammy@aol.com', '0000000000000000'),
-(6, 'root', '', 'dfd', 'fdsf', 'dfdsf', 'fdfs'),
-(7, 'ewrwerw', 'ere', 'erew', 'werw', 'ewr', 'rw'),
-(8, 'jjjhj', 'hh', 'jk', 'hkj', 'h', 'j'),
-(11, 'fsdsfsd', 'jkj', 'kjkj', 'jj', 'kjk', 'jk'),
-(14, 'fgdfrgrrgdfgf', 'jkj', 'kjkj', 'jj', 'kjkdcds', 'jk'),
-(15, 'rgertrteterte', 'jrtert', 'jkjkrter', 'kjtrre', 'kjfsdfreterdsfsd', 'tetjk');
+INSERT INTO `accounts` (`accountID`, `username`, `password`, `firstName`, `lastName`, `emailAddress`) VALUES
+(1, 'sammysucks', 'samssams', 'Sammy', 'Vo', 'sammyvo@gmail.com'),
+(2, 'tiffany', 'tifftiff', 'Tiffany', 'Nguyen', 'tiffanynguyen@yahoo.com'),
+(3, 'sugardaddy', 'sammytran', 'Steven', 'Tran', 'steven&sammy@aol.com'),
+(4, 'himasucks', 'ilovetiffany', 'Hima', 'Nesbit', 'himalovestiffany@aol.com');
 
 -- --------------------------------------------------------
 
@@ -153,7 +147,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `accountID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `accountID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `media`
