@@ -10,19 +10,9 @@ $dayBday = filter_input(INPUT_POST, 'dayBday');
 $yearBday = filter_input(INPUT_POST, 'yearBday');
 /* $creditCard = filter_input(INPUT_POST, 'creditCard'); */
 
-
 // Validate inputs
 require_once('database.php');
 
-    if (empty($_POST['username']) || empty($_POST['password']) || empty($_POST['emailAddress'])) {
-        echo '<b>Please fill out all fields.</b>';
-    } else {
-//        $dupUsername = ("SELECT username FROM accounts WHERE username='" . $_POST['username'] . "'");
-
-        $dup = ("SELECT username FROM users WHERE username='".$_POST['username']."'");
-        if(($dup) >0){
-            echo '<b>username Already Used.</b>';
-        } else {
             $query = 'INSERT INTO accounts (username, password, firstName, lastName, emailAddress, monthBday, dayBday, yearBday) VALUES (:username, :password, :firstName, :lastName, :emailAddress, :monthBday, :dayBday, :yearBday)';
 
             $statement = $db->prepare($query);
@@ -46,5 +36,3 @@ require_once('database.php');
             } else {
                 echo '<b>Error Registeration.</b>';
             }
-        }
-    }
