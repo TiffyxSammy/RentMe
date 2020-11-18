@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 16, 2020 at 05:30 AM
+-- Generation Time: Nov 18, 2020 at 08:08 AM
 -- Server version: 10.4.14-MariaDB
 -- PHP Version: 7.4.11
 
@@ -28,23 +28,24 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `accounts` (
-  `accountID` int(11) NOT NULL,
+  `id` int(11) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `firstName` text NOT NULL,
   `lastName` text NOT NULL,
-  `emailAddress` varchar(255) NOT NULL
+  `emailAddress` varchar(255) NOT NULL,
+  `monthBday` varchar(255) NOT NULL,
+  `dayBday` varchar(255) NOT NULL,
+  `yearBday` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `accounts`
 --
 
-INSERT INTO `accounts` (`accountID`, `username`, `password`, `firstName`, `lastName`, `emailAddress`) VALUES
-(1, 'sammysucks', 'samssams', 'Sammy', 'Vo', 'sammyvo@gmail.com'),
-(2, 'tiffany', 'tifftiff', 'Tiffany', 'Nguyen', 'tiffanynguyen@yahoo.com'),
-(3, 'sugardaddy', 'sammytran', 'Steven', 'Tran', 'steven&sammy@aol.com'),
-(4, 'himasucks', 'ilovetiffany', 'Hima', 'Nesbit', 'himalovestiffany@aol.com');
+INSERT INTO `accounts` (`id`, `username`, `password`, `firstName`, `lastName`, `emailAddress`, `monthBday`, `dayBday`, `yearBday`) VALUES
+(1, 'james', 'e10adc3949ba59abbe56e057f20f883e', 'james', 'james', 'james', 'January', '1', '1990'),
+(80, 'sammy', '4385695633f8c6c8ab52592092cecf04', 'sammy', 'sammy', 'sammy', 'January', '1', '1990');
 
 -- --------------------------------------------------------
 
@@ -123,7 +124,7 @@ INSERT INTO `products` (`productID`, `categoryID`, `productName`, `stock`, `prod
 -- Indexes for table `accounts`
 --
 ALTER TABLE `accounts`
-  ADD PRIMARY KEY (`accountID`),
+  ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `username` (`username`),
   ADD UNIQUE KEY `emailAddress` (`emailAddress`);
 
@@ -147,7 +148,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `accounts`
 --
 ALTER TABLE `accounts`
-  MODIFY `accountID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
 
 --
 -- AUTO_INCREMENT for table `media`

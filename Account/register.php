@@ -1,54 +1,20 @@
 <?php
 
-require('database.php');
-
-$query = 'SELECT * FROM accounts ORDER BY accountID';
-$statement = $db->prepare($query);
-$statement->execute();
-$accounts = $statement->fetchAll();
-$statement->closeCursor();
+include('navBar.php');
 
 ?>
 
-<title>Create an Account</title>
-<link rel="stylesheet" type="text/css" href="aR.css">
+<html>
 
-<body>
-    <!--navigation-------------->
-    <nav>
-        <!--logo--------------->
-        <a href="index.html" class="logo">
-            <img src="images/favicon.jpg" />
-        </a>
-        <!--menu--btn----------------->
-        <input type="checkbox" class="menu-btn" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn">
-            <span class="nav-icon"></span>
-        </label>
-        <!--menu-------------->
-        <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="movies.html">Movies</a></li>
-            <li><a href="tv_shows.html">TV Shows</a></li>
-            <li><a href="favorites.html">Premium</a></li>
-            <li><a href="#">Cart</a></li>
-            <li><a href="accountSettings.php">Account</a></li>
-        </ul>
-        <!--search------------->
-        <div class="search">
-            <input type="text" placeholder="Search" />
-            <!--search-icon----------->
-            <i class="fas fa-search"></i>
-        </div>
-    </nav>
-
-</body>
-
+<head>
+    <title>Create an Account</title>
+    <link rel="stylesheet" type="text/css" href="aR.css">
+</head>
 <main>
     <div class="signup">
         <h1> Sign up for an account today! </h1>
 
-        <form action="addAccount.php" method="post" id="add_account_form">
+        <form action="process.php" method="post">
 
             <label> Username: </label>
             <input type="text" name="username"><br>
@@ -148,7 +114,7 @@ $statement->closeCursor();
                 <option value="2020">2020</option>
             </select><br>
 
-            <button id="submit" type="submit" value="Sign Up">Sign Up</button>
+            <input type="submit" value="Register" name="register"></input>
         </form>
     </div>
 </main>
