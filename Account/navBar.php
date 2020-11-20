@@ -1,3 +1,9 @@
+<?php
+
+session_start();
+
+?>
+
 <body scroll="no" style="overflow: hidden">
 
     <!--navigation-------------->
@@ -13,12 +19,22 @@
         </label>
         <!--menu-------------->
         <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.php">Home</a></li>
             <li><a href="../movies.html">Movies</a></li>
             <li><a href="../tv_shows.html">TV Shows</a></li>
             <li><a href="../favorites.html">Premium</a></li>
             <li><a href="#">Cart</a></li>
-            <li><a href="login.php">Account</a></li>
+            <?php
+                if (isset($_SESSION['username'])) {
+                    echo "<li><a href='#'>Account</a></li>";
+                } else {
+                    echo "<li><a href='#'>Sign Up</a></li>";
+                    echo "<li><a href='#'>Log In</a></li>";
+                }
+            ?>
+            </div>
+            </div>
+
         </ul>
         <!--search------------->
         <div class="search">
@@ -29,3 +45,52 @@
     </nav>
 
 </body>
+
+
+
+</div>
+
+
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.04);
+        background-color: #ffffff;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 100;
+    }
+
+    .logo img {
+        height: 35px;
+    }
+
+    nav .menu {
+        display: flex;
+    }
+
+    nav .menu li a {
+        height: 40px;
+        line-height: 43px;
+        margin: 0px;
+        padding: 0px 22px;
+        display: flex;
+        font-size: 0.8rem;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: #585858;
+        letter-spacing: 1px;
+    }
+
+    .signup {
+        margin-top: 100px;
+    }
+</style>
