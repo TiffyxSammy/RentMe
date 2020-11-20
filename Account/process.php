@@ -31,7 +31,7 @@ if (isset($_POST['register'])) {
 
     if (insertDetails($db, $username, $password, $firstName, $lastName, $emailAddress, $monthBday, $dayBday, $yearBday)); {
         $_SESSION['username'] = $username;
-        header("Location: profile.php");
+        header("Location: login.php");
 
         //echo "Account created successfully";
     }
@@ -49,7 +49,7 @@ if (isset($_POST['login'])) {
 
     if (checkLogin($db, $username, $password)) {
         $_SESSION['username'] = $username;
-        header("Location: profile.php");
+        header("Location: ../index.html");
     } else {
         echo "The username or password is incorrect";
     }
@@ -71,7 +71,7 @@ if (isset($_POST['update'])) {
         return;
     }
 
-    if (!checkUserNameExists($db, $username)) {
+     if (!checkUserNameExists($db, $username)) {
         echo "Username already exists";
         return;
     }
@@ -80,7 +80,6 @@ if (isset($_POST['update'])) {
         echo "Email address is already in use";
         return;
     }
-
 
     $currentUserName = $_SESSION['username'];
 
@@ -97,7 +96,7 @@ if (isset($_POST['update'])) {
 
     if (updateDetails($db, $id, $username, $password, $firstName, $lastName, $emailAddress, $monthBday, $dayBday, $yearBday)); {
         $_SESSION['username'] = $username;
-        header("Location: profile.php");
+        header("Location: ../userAccount.php");
     }
 }
 
@@ -198,7 +197,6 @@ function checkEmailExists($db, $emailAddress)
     } else {
         return true;
     }
-}
-
+} 
 
 ?>

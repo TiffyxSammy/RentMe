@@ -1,3 +1,9 @@
+<?php
+        session_start();
+        include_once('Account/config.php');
+
+        ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -34,7 +40,7 @@
             <li><a href="tv_shows.html">TV Shows</a></li>
             <li><a href="favorites.html">Premium</a></li>
             <li><a href="#">Cart</a></li>
-            <li><a href="userAccount.html">Account</a></li>
+            <li><a href="userAccount.php">Account</a></li>
         </ul>
         <!--search------------->
         <div class="search">
@@ -51,24 +57,28 @@
     </section>
     <!--Documentaries---------------------->
     <section id="latest">
-        <a style="color: black;" href="#"><h2 class="trending-now">Update</h2></a>
+        <a style="color: black;" href="Account/updateProfile.php">
+            <h2 class="trending-now">Update</h2>
+        </a>
     </section>
 
 
     <section id="latest">
-        <a style="color: black;" href="#"><h2 class="trending-now">Delete</h2></a>
+        <a style="color: black;" href="Account/deleteAccount.php">
+            <h2 class="trending-now">Delete</h2>
+        </a>
     </section>
 
     <section id="latest">
-        <a style="color: black;" href="#"><h2 class="trending-now">Logout</h2></a>
+        <a style="color: black;" href="Account/logout.php">
+            <h2 class="trending-now">Logout</h2>
+        </a>
     </section>
 
     <section id="latest">
-        <iframe style="margin-left:200px;" src="https://giphy.com/embed/3FqNDjbZCNs37HnRC7" width="350" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p>
+        <iframe style="margin-left:200px;" src="https://giphy.com/embed/3FqNDjbZCNs37HnRC7" width="350" height="350" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <p></p>
     </section>
-
-
-
 
     <!--footer------------------>
     <footer style="margin-top:10px;">
@@ -77,11 +87,11 @@
     </footer>
     <!--slider-script-->
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('#autoWidth,#autoWidth2').lightSlider({
                 autoWidth: true,
                 loop: true,
-                onSliderLoad: function () {
+                onSliderLoad: function() {
                     $('#autoWidth,#autoWidth2').removeClass('cS-hidden');
                 }
             });

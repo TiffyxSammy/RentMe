@@ -1,6 +1,7 @@
 <?php
 
-include('navBar.php');
+session_start();
+//include('navBar.php');
 
 ?>
 
@@ -10,9 +11,83 @@ include('navBar.php');
     <title>Create an Account</title>
     <link rel="stylesheet" type="text/css" href="aR.css">
 </head>
-<main>
+
+<style>
+
+    body {
+        background-image: url('blurredrg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    form {
+        width: 500px;
+        height: 650px;
+        border: 2px solid #ccc;
+        padding: 30px;
+        background: #E0E0E0;
+        border-radius: 15px;
+    }
+
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    input {
+        display: block;
+        border: 2px solid #ccc;
+        width: 95%;
+        padding: 10px;
+        margin: 10px auto;
+        border-radius: 5px;
+    }
+
+    label {
+        color: black;
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    button {
+        float: left;
+        background: #555;
+        padding: 10px 15px;
+        color: #fff;
+        border-radius: 5px;
+        margin-right: 10px;
+        border: none;
+
+    }
+
+    button:hover {
+        opacity: 0.7;
+    }
+
+    .signupBtn {
+        float: right;
+        padding: 10px 15px;
+        color: black;
+        border-radius: 5px;
+        margin-right: 10px;
+        margin-top: -30px;
+        border: none;
+
+    }
+    
+</style>
+<body scroll="no" style="overflow: hidden">
     <div class="signup">
-        <h1> Sign up for an account today! </h1>
+        <h1 style="text-align:center; color: black;"> Sign Up </h1>
 
         <form action="process.php" method="post">
 
@@ -117,7 +192,6 @@ include('navBar.php');
             <input type="submit" value="Register" name="register"></input>
         </form>
     </div>
-</main>
 </body>
 
 </html>

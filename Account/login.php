@@ -1,6 +1,8 @@
 <?php
 
-include('navBar.php');
+session_start();
+
+//include('navBar.php');
 include('config.php');
 
 ?>
@@ -15,11 +17,15 @@ include('config.php');
 
 <style>
     body {
-        background: #1690A7;
+        background-image: url('blurredrg.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
+        height: 80vh;
+        background-repeat: no-repeat;
     }
 
     * {
@@ -28,10 +34,10 @@ include('config.php');
 
     form {
         width: 500px;
-        height: 400px;
+        height: 350px;
         border: 2px solid #ccc;
         padding: 30px;
-        background: #fff;
+        background: #E0E0E0;
         border-radius: 15px;
     }
 
@@ -50,7 +56,7 @@ include('config.php');
     }
 
     label {
-        color: #888;
+        color: black;
         font-size: 18px;
         padding: 10px;
     }
@@ -85,7 +91,9 @@ include('config.php');
 
 </style>
 
-<body>
+<body scroll="no" style="overflow: hidden">
+<div class="signup">
+<h1 style="text-align:center;"> Log In </h1>
     <form action="process.php" method="post">
         <label> Username: </label>
         <input type="text" name="username"><br>
@@ -95,8 +103,8 @@ include('config.php');
 
         <input type="submit" value="Login" name="login"></input>
 
-        <a href="register.php">Register</a>
     </form>
+    </div>
 
 </body>
 

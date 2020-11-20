@@ -14,7 +14,7 @@ $query->bindParam('username', $username);
 
 $query->execute();
 
-header("Location: login.php");
+header("Location: register.php");
 
 
 ?>
