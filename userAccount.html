@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/lightslider.css" />
+    <!--js-link-->
+    <script src="js/JQuery3.3.1.js"></script>
+    <script src="js/lightslider.js"></script>
+    <!--favicon-->
+    <link rel="shortcut icon" href="images/favicon.jpg" />
+    <!--using FontAwesome-->
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--navigation-------------->
+    <nav>
+        <!--logo--------------->
+        <a href="index.html" class="logo">
+            <img src="images/favicon.jpg" />
+        </a>
+        <!--menu--btn----------------->
+        <input type="checkbox" class="menu-btn" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn">
+            <span class="nav-icon"></span>
+        </label>
+        <!--menu-------------->
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="tv_shows.html">TV Shows</a></li>
+            <li><a href="favorites.html">Premium</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="userAccount.html">Account</a></li>
+        </ul>
+        <!--search------------->
+        <div class="search">
+            <input type="text" placeholder="Search" />
+            <!--search-icon----------->
+            <i class="fas fa-search"></i>
+        </div>
+    </nav>
+    <section id="main">
+        <!--showcase----------------------->
+        <!--heading------------->
+        <h1 class="showcase-heading">Account</h1>
+
+    </section>
+    <!--Documentaries---------------------->
+    <section id="latest">
+        <a href="#"><h2 class="trending-now">Update</h2></a>
+    </section>
+
+
+    <section id="latest">
+        <a href="#"><h2 class="trending-now">Delete</h2></a>
+    </section>
+
+    <section id="latest">
+        <a href="#"><h2 class="trending-now">Logout</h2></a>
+    </section>
+
+    <section id="latest">
+    </section>
+
+
+
+
+    <!--footer------------------>
+    <footer style="margin-top:375px;">
+        <p>Questions?</p>
+        <p>Well you can't contact us. Good luck.</p>
+    </footer>
+    <!--slider-script-->
+    <script>
+        $(document).ready(function () {
+            $('#autoWidth,#autoWidth2').lightSlider({
+                autoWidth: true,
+                loop: true,
+                onSliderLoad: function () {
+                    $('#autoWidth,#autoWidth2').removeClass('cS-hidden');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
