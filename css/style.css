@@ -2,7 +2,7 @@ body{
     margin:0px;
     padding: 0px;
     font-family: poppins;
-    background-color: rgba(151,151,151,0.03);
+    background-color:#E0E0E0; /* body background color*/
 }
 *{
     box-sizing: border-box;
@@ -19,7 +19,7 @@ nav{
     align-items: center;
     width:100%;
     border:1px solid rgba(0,0,0,0.04);
-    background-color: #ffffff;
+    background-color: black; /* navbar color */
     position: fixed;
     left: 0;
     top: 0;
@@ -40,7 +40,7 @@ nav .menu li a{
     font-size: 0.8rem;
     text-transform: uppercase;
     font-weight: 500;
-    color:#585858;
+    color:white; /*nav bar text color*/
     letter-spacing: 1px;
 }
 .search{
@@ -71,7 +71,7 @@ nav .menu li a:hover{
 }
 #main{
     padding-top: 80px;
-    background-color: #ffffff;
+    background-color:#E0E0E0; /*new releases background color*/
 }
 .showcase-box{
     width:430px;
@@ -260,7 +260,7 @@ nav .menu-btn{
         position: absolute;
         top: 65px;
         left: 0px;
-        background: #fff;
+        background:black; /* drop down menu color small size */
         border-bottom:4px solid #242424;
         width:100%;
         padding:0px;
