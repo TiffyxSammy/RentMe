@@ -399,3 +399,6 @@ input {
   .click:hover {
     background-color: limegreen;
   }
+  main {
+    padding-top:74px;
+}
