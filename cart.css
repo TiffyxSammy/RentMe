@@ -1,0 +1,96 @@
+body{
+    margin:0px;
+    padding: 0px;
+    font-family: poppins;
+    background-color: rgba(151,151,151,0.03);
+}
+*{
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    border:1px solid rgba(0,0,0,0.04);
+    background-color: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+.logo img{
+    height: 35px;
+}
+nav .menu{
+    display: flex;
+}
+nav .menu li a{
+    height: 40px;
+    line-height: 43px;
+    margin: 0px;
+    padding: 0px 22px;
+    display: flex;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    color:#585858;
+    letter-spacing: 1px;
+}
+.search{
+    width:250px;
+    height: 40px;
+    background-color: rgba(245,245,245,0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 0px 20px;
+}
+.search input{
+    width:100%;
+    height: 30px;
+    border:none;
+    outline: none;
+    background-color: transparent;
+}
+.search i{
+    color:#3a3a3a;
+}
+table {
+    font-size: 50px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 2px solid black;
+    text-align: left;
+    padding: 10px;
+}
+input {
+    width: 100%;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 3px;
+}
+.click {
+    font-size: 20px;
+    color: whitesmoke;
+    background-color:blue;
+    border-color: black;
+    width: 50%;
+    padding: 8px;
+    margin: 14px 5px 20px;
+    border-radius: 100px;
+  }
+  .click:hover {
+    background-color: limegreen;
+  }
