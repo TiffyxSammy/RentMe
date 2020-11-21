@@ -372,7 +372,7 @@ table {
     font-size: 25px;
     font-family: arial, sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: 50%;
 }
 td, th {
     border: 2px solid black;
