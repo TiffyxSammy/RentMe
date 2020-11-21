@@ -65,6 +65,27 @@ CREATE TABLE `media` (
 INSERT INTO `media` (`categoryID`, `categoryName`) VALUES
 (1, 'Movies'),
 (2, 'TV Shows');
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `cart`
+--
+
+CREATE TABLE `cart` (
+  `productID` int(11) NOT NULL,
+  `categoryID` int(11) NOT NULL,
+  `productName` varchar(255) NOT NULL,
+  `productPrice` decimal(10,0) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `cart`
+--
+
+INSERT INTO `cart` (`productID`,`categoryID`, `productName`,`productPrice` ) VALUES
+(1,1, 'MIB International', '5.00'),
+(2,1, 'Once Upon a Time in Hollywood','5.00'),
+(3,1, 'Bad Boys for Life', '5');
 
 -- --------------------------------------------------------
 
