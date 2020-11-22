@@ -24,14 +24,6 @@ session_start();
             <li><a href="../tv_shows.html">TV Shows</a></li>
             <li><a href="../favorites.html">Premium</a></li>
             <li><a href="#">Cart</a></li>
-            <?php
-                if (isset($_SESSION['username'])) {
-                    echo "<li><a href='#'>Account</a></li>";
-                } else {
-                    echo "<li><a href='#'>Sign Up</a></li>";
-                    echo "<li><a href='#'>Log In</a></li>";
-                }
-            ?>
             </div>
             </div>
 

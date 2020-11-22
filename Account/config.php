@@ -4,7 +4,7 @@ class config
 {
     public static function connect()
     {
-        $dsn = 'mysql:host=localhost; dbname=Rent_Me';
+        $dsn = 'mysql:host=localhost; dbname=rent_me';
         $un = 'root';
         $pd = '';
 

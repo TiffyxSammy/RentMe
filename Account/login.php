@@ -2,7 +2,6 @@
 
 session_start();
 
-//include('navBar.php');
 include('config.php');
 
 ?>
