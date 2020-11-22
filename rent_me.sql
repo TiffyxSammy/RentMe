@@ -59,7 +59,7 @@ CREATE TABLE `cart` (
   `categoryID` int(11) NOT NULL,
   `productName` varchar(255) NOT NULL,
   `productPrice` decimal(10,0) NOT NULL,
-  
+  `url` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
