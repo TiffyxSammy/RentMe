@@ -105,7 +105,7 @@ include('database.php');
 
 
         <?php 
-                $sql = "SELECT * FROM products WHERE movieCategory = \"war\"";
+                $sql = "SELECT * FROM products WHERE movieCategory = \"drama\"";
                 $TVdramas = $db->query($sql);
 
                 foreach($TVdramas as $drama):?>
@@ -132,7 +132,7 @@ include('database.php');
 
 
     <?php 
-                $sql = "SELECT * FROM products WHERE movieCategory = \"war\"";
+                $sql = "SELECT * FROM products WHERE movieCategory = \"fantasy\"";
                 $fantasyM = $db->query($sql);
 
                 foreach($fantasyM as $fantasy):?>
@@ -185,7 +185,7 @@ include('database.php');
 
 
     <?php 
-                $sql = "SELECT * FROM products WHERE movieCategory = \"children\"";
+                $sql = "SELECT * FROM products WHERE movieCategory = \"casual\"";
                 $casualTV = $db->query($sql);
 
                 foreach($casualTV as $casual):?>
