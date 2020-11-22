@@ -95,7 +95,7 @@ session_start();
             <input type="text" name="username"><br>
 
             <label> Password: </label>
-            <input type="text" name="password"><br>
+            <input type="password" name="password"><br>
 
             <label> First Name: </label>
             <input type="text" name="firstName"><br>
