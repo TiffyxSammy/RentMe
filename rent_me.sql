@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 22, 2020 at 11:07 PM
+-- Generation Time: Nov 23, 2020 at 12:34 AM
 -- Server version: 10.4.16-MariaDB
 -- PHP Version: 7.4.12
 
@@ -69,7 +69,7 @@ CREATE TABLE `cart` (
 
 INSERT INTO `cart` (`productID`, `categoryID`, `productName`, `productPrice`, `url`, `href`) VALUES
 (1, 2, 'Madame Secretary', '5', 'images/madam.jpg', 'Home_videos/madamsec.php'),
-(2, 1, 'Snowden', '5','images/s.jpg', 'Home_videos/snowden.php' ),
+(2, 1, 'Snowden', '5', 'images/s.jpg', 'Home_videos/snowden.php'),
 (3, 1, 'A Star is Born', '5', 'images/astar.jpg', 'Home_videos/escaperoom.php');
 
 -- --------------------------------------------------------
@@ -192,7 +192,7 @@ INSERT INTO `products` (`productID`, `categoryID`, `productName`, `stock`, `prod
 (80, 1, 'The Pixar Story', 4, '5', 'documentary', 'images/pixarr.jpg', 'movie_videos/pixarstory.php'),
 (81, 1, 'Pocahontas', 4, '5', 'childrenmovies', 'images/pocahontas.jpg', 'movie_videos/pocahontas.php'),
 (82, 1, 'The Polar Express', 4, '5', 'holiday', 'images/polarexpress.jpg', 'movie_videos/polarexpress.php'),
-(83, 1, 'RGB', 4, '5', 'documentary', 'images/rgb.jpg', 'movie_videos/rbg.php'),
+(83, 1, 'RBG', 4, '5', 'documentary', 'images/rbg.jpg', 'movie_videos/rbg.php'),
 (84, 1, 'Christopher Robin', 4, '5', 'childrenmovies', 'images/robin.jpg', 'movie_videos/christopherrobin.php'),
 (85, 1, 'The Sound of Music', 4, '5', 'childrenmovies', 'images/soundofmusic.jpg', 'movie_videos/som.php'),
 (86, 1, 'The Space Between Us', 4, '5', 'action', 'images/spacebetween.jpg', 'movie_videos/spacebetweenus.php'),
@@ -241,7 +241,7 @@ INSERT INTO `products` (`productID`, `categoryID`, `productName`, `stock`, `prod
 (132, 2, 'Locke and Key', 4, '5', 'fantasy', 'images/lockeandkey.png', 'tv_videos/lockkey.php'),
 (133, 2, 'The Magicians', 4, '5', 'fantasy', 'images/magicians.jpeg', 'tv_videos/magician.php'),
 (134, 2, 'Mars', 4, '5', 'casual', 'images/marrs.jpg', 'tv_videos/marrs.php'),
-(136, 2, 'The Originals', 4, '5', 'drama', 'images/originals.jpg', 'tv_videos/originals.php'),
+(136, 2, 'The Originals', 4, '5', 'drama', 'images/TheOG.jpg', 'tv_videos/originals.php'),
 (137, 2, 'Pretty Little Liars', 4, '5', 'trendingTV', 'images/Pll.jpg', 'tv_videos/pll.php'),
 (138, 2, 'Quantico', 4, '5', 'war', 'images/quantico.jpg', 'tv_videos/quantico.php'),
 (139, 2, 'The Ranch', 4, '5', 'drama', 'images/ranch.jpg', 'tv_videos/theranch.php'),
@@ -259,7 +259,7 @@ INSERT INTO `products` (`productID`, `categoryID`, `productName`, `stock`, `prod
 (151, 2, 'The Twilight Zone', 4, '5', 'fantasy', 'images/twilight.jpg', 'tv_videos/twilight.php'),
 (152, 2, 'Warrior Nun', 4, '5', 'fantasy', 'images/warrior.jpg', 'tv_videos/warriornun.php'),
 (153, 2, 'The West Wing', 4, '5', 'war', 'images/westwing.jpg', 'tv_videos/westwing.php'),
-(154, 2, 'Wizards of Waverly Place', 4, '5', 'children', 'images/wizards.jpg', 'tv_videos/wizards.php'),
+(154, 2, 'Wizards of Waverly Place', 4, '5', 'children', 'images/wizards.png', 'tv_videos/wizards.php'),
 (155, 2, 'Younger', 4, '5', 'casual', 'images/younger.jpg', 'tv_videos/youngerr.php'),
 (156, 2, 'Young and Hungry', 4, '5', 'children', 'images/younghung.jpg', 'tv_videos/younhung.php'),
 (157, 2, 'Zoey101', 4, '5', 'children', 'images/zoey101.jpg', 'tv_videos/zoey.php');
