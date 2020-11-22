@@ -22,7 +22,7 @@
     <!--navigation-------------->
     <nav>
         <!--logo--------------->
-        <a href="#" class="logo">
+        <a href="index.php" class="logo">
             <img src="../images/favicon.jpg" />
         </a>
         <!--menu--btn----------------->
@@ -32,13 +32,12 @@
         </label>
         <!--menu-------------->
         <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../movies.html">Movies</a></li>
-            <li><a href="../tv_shows.html">TV Shows</a></li>
-            <li><a href="../favorites.html">Premium</a></li>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="../movies.php">Movies</a></li>
+            <li><a href="../tv_shows.php">TV Shows</a></li>
             <li><a href="../hangman.html">Hangman</a></li>
-            <li><a href="cart.php">Cart</a></li>
-            <li><a href="userAccount.php">Account</a></li>
+            <li><a href="../cart.php">Cart</a></li>
+            <li><a href="../userAccount.php">Account</a></li>
         </ul>
         <!--search------------->
         <div class="search">
@@ -50,14 +49,14 @@
     <section id="main">
         <!--showcase----------------------->
         <!--heading------------->
-        <h1 class="showcase-heading">Lucifer</h1>
-        <h4 style="margin-left:40px; margin-right:60px; color:#696969;">The series revolves around the story of Lucifer Morningstar (Tom Ellis), the Devil, who abandons Hell for Los Angeles where he runs his own nightclub named 'LUX' and becomes a consultant to the LAPD.</h4>
+        <h1 class="showcase-heading">Dickinson</h1>
+        <h4 style="margin-left:40px; margin-right:60px; color:#696969;">It takes viewers into the world of Emily, audaciously exploring the constraints of society, gender, and family from the perspective of a budding writer who doesn't fit in to her own time through her imaginative point of view. Dickinson is Emily's coming-of-age story – one woman's fight to get her voice heard."</h4>
 
 
     </section>
     <!--Top-10---------------------->
     <section style="margin-left:300px;">
-        <iframe width="800" height="500" src="https://www.youtube.com/embed/X4bF_quwNtw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="800" height="500" src="https://www.youtube.com/embed/8u7VlfbsLOA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     
@@ -67,7 +66,7 @@
 
     <!--footer------------------>
     <footer>
-        <p style="text-align: center;">“People don’t have power over us. We give it to them.”</p>
+        <p style="text-align: center;">"Saying nothing sometimes says the most."</p>
     </footer>
     <!--slider-script-->
     <script>

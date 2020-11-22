@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 
@@ -20,7 +22,7 @@
     <!--navigation-------------->
     <nav>
         <!--logo--------------->
-        <a href="#" class="logo">
+        <a href="index.php" class="logo">
             <img src="../images/favicon.jpg" />
         </a>
         <!--menu--btn----------------->
@@ -30,13 +32,12 @@
         </label>
         <!--menu-------------->
         <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../movies.html">Movies</a></li>
-            <li><a href="../tv_shows.html">TV Shows</a></li>
-            <li><a href="../favorites.html">Premium</a></li>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="../movies.php">Movies</a></li>
+            <li><a href="../tv_shows.php">TV Shows</a></li>
             <li><a href="../hangman.html">Hangman</a></li>
-            <li><a href="cart.php">Cart</a></li>
-            <li><a href="userAccount.php">Account</a></li>
+            <li><a href="../cart.php">Cart</a></li>
+            <li><a href="../userAccount.php">Account</a></li>
         </ul>
         <!--search------------->
         <div class="search">
@@ -48,14 +49,14 @@
     <section id="main">
         <!--showcase----------------------->
         <!--heading------------->
-        <h1 class="showcase-heading">Holidate</h1>
-        <h4 style="margin-left:40px; margin-right:60px; color:#696969;">Fed up with being single on holidays, two strangers agree to be each other's platonic plus-ones all year long, only to catch real feelings along the way.</h4>
+        <h1 class="showcase-heading">The Good Place</h1>
+        <h4 style="margin-left:40px; margin-right:60px; color:#696969;">Four people and their otherworldly frienemy struggle in the afterlife to define what it means to be good. The Good Place is a town where those who have been good throughout their lives go once they have passed away.</h4>
 
 
     </section>
     <!--Top-10---------------------->
     <section style="margin-left:300px;">
-        <iframe width="800" height="500" src="https://www.youtube.com/embed/hxaaAoI57fk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="800" height="500" src="https://www.youtube.com/embed/RfBgT5djaQw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     
@@ -65,7 +66,7 @@
 
     <!--footer------------------>
     <footer>
-        <p>“Everything ends eventually. So why sit around and wait for it to happen.”</p>
+        <p style="text-align: center;">“Don’t worry, demons can’t die."</p>
     </footer>
     <!--slider-script-->
     <script>
@@ -82,6 +83,3 @@
 </body>
 
 </html>
-
-
-

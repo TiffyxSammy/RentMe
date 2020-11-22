@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html>
 
@@ -20,7 +22,7 @@
     <!--navigation-------------->
     <nav>
         <!--logo--------------->
-        <a href="#" class="logo">
+        <a href="index.php" class="logo">
             <img src="../images/favicon.jpg" />
         </a>
         <!--menu--btn----------------->
@@ -30,13 +32,12 @@
         </label>
         <!--menu-------------->
         <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../movies.html">Movies</a></li>
-            <li><a href="../tv_shows.html">TV Shows</a></li>
-            <li><a href="../favorites.html">Premium</a></li>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="../movies.php">Movies</a></li>
+            <li><a href="../tv_shows.php">TV Shows</a></li>
             <li><a href="../hangman.html">Hangman</a></li>
-            <li><a href="cart.php">Cart</a></li>
-            <li><a href="userAccount.php">Account</a></li>
+            <li><a href="../cart.php">Cart</a></li>
+            <li><a href="../userAccount.php">Account</a></li>
         </ul>
         <!--search------------->
         <div class="search">
@@ -48,14 +49,14 @@
     <section id="main">
         <!--showcase----------------------->
         <!--heading------------->
-        <h1 class="showcase-heading">Rocketman</h1>
-        <h4 style="margin-left:40px; margin-right:60px; color:#696969;">Young Reginald Dwight changes his name to Elton John and collaborates with singer-songwriter Bernie Taupin to become one of the most iconic figures in pop history. Set to his most beloved songs, it's the epic musical story of Elton John, his breakthrough years in the 1970s and his fantastical transformation from shy piano prodigy to international superstar.</h4>
+        <h1 class="showcase-heading">Lucifer</h1>
+        <h4 style="margin-left:40px; margin-right:60px; color:#696969;">The series revolves around the story of Lucifer Morningstar (Tom Ellis), the Devil, who abandons Hell for Los Angeles where he runs his own nightclub named 'LUX' and becomes a consultant to the LAPD.</h4>
 
 
     </section>
     <!--Top-10---------------------->
     <section style="margin-left:300px;">
-        <iframe width="800" height="500" src="https://www.youtube.com/embed/S3vO8E2e6G0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="800" height="500" src="https://www.youtube.com/embed/X4bF_quwNtw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     
@@ -65,7 +66,7 @@
 
     <!--footer------------------>
     <footer>
-        <p>“It's going to be a wild ride.”</p>
+        <p style="text-align: center;">“People don’t have power over us. We give it to them.”</p>
     </footer>
     <!--slider-script-->
     <script>
@@ -82,6 +83,3 @@
 </body>
 
 </html>
-
-
-

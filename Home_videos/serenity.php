@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 
@@ -22,7 +20,7 @@
     <!--navigation-------------->
     <nav>
         <!--logo--------------->
-        <a href="#" class="logo">
+        <a href="index.php" class="logo">
             <img src="../images/favicon.jpg" />
         </a>
         <!--menu--btn----------------->
@@ -32,13 +30,12 @@
         </label>
         <!--menu-------------->
         <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../movies.html">Movies</a></li>
-            <li><a href="../tv_shows.html">TV Shows</a></li>
-            <li><a href="../favorites.html">Premium</a></li>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="../movies.php">Movies</a></li>
+            <li><a href="../tv_shows.php">TV Shows</a></li>
             <li><a href="../hangman.html">Hangman</a></li>
-            <li><a href="cart.php">Cart</a></li>
-            <li><a href="userAccount.php">Account</a></li>
+            <li><a href="../cart.php">Cart</a></li>
+            <li><a href="../userAccount.php">Account</a></li>
         </ul>
         <!--search------------->
         <div class="search">
@@ -50,14 +47,14 @@
     <section id="main">
         <!--showcase----------------------->
         <!--heading------------->
-        <h1 class="showcase-heading">The Devil Wears Prada</h1>
-        <h4 style="margin-left:40px; margin-right:60px; color:#696969;">Andy (Anne Hathaway) is a recent college graduate with big dreams. Upon landing a job at prestigious Runway magazine, she finds herself the assistant to diabolical editor Miranda Priestly (Meryl Streep). Andy questions her ability to survive her grim tour as Miranda's whipping girl without getting scorched.</h4>
+        <h1 class="showcase-heading">Serenity</h1>
+        <h4 style="margin-left:40px; margin-right:60px; color:#696969;">Baker Dill is a fishing boat captain who leads tours off of the tranquil enclave of Plymouth Island. His peaceful life is soon shattered when his ex-wife Karen tracks him down. Desperate for help, Karen begs Baker to save her -- and their young son -- from her abusive husband. She wants him to take the brute out for a fishing excursion -- then throw him overboard to the sharks. Thrust back into a life that he wanted to forget, Baker now finds himself struggling to choose between right and wrong.</h4>
 
 
     </section>
     <!--Top-10---------------------->
     <section style="margin-left:300px;">
-        <iframe width="800" height="500" src="https://www.youtube.com/embed/6ZOZwUQKu3E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="800" height="500" src="https://www.youtube.com/embed/OrNbYgiIqoQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     
@@ -67,7 +64,7 @@
 
     <!--footer------------------>
     <footer>
-        <p style="text-align: center;"> “Is there some reason that my coffee isn’t here? Has she died or something?”</p>
+        <p>“I mean it. It's cold out there. I don't wanna get left.”</p>
     </footer>
     <!--slider-script-->
     <script>

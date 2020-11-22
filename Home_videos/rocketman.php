@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 
@@ -22,7 +20,7 @@
     <!--navigation-------------->
     <nav>
         <!--logo--------------->
-        <a href="#" class="logo">
+        <a href="index.php" class="logo">
             <img src="../images/favicon.jpg" />
         </a>
         <!--menu--btn----------------->
@@ -32,13 +30,12 @@
         </label>
         <!--menu-------------->
         <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../movies.html">Movies</a></li>
-            <li><a href="../tv_shows.html">TV Shows</a></li>
-            <li><a href="../favorites.html">Premium</a></li>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="../movies.php">Movies</a></li>
+            <li><a href="../tv_shows.php">TV Shows</a></li>
             <li><a href="../hangman.html">Hangman</a></li>
-            <li><a href="cart.php">Cart</a></li>
-            <li><a href="userAccount.php">Account</a></li>
+            <li><a href="../cart.php">Cart</a></li>
+            <li><a href="../userAccount.php">Account</a></li>
         </ul>
         <!--search------------->
         <div class="search">
@@ -50,14 +47,14 @@
     <section id="main">
         <!--showcase----------------------->
         <!--heading------------->
-        <h1 class="showcase-heading">Mile 22</h1>
-        <h4 style="margin-left:40px; margin-right:60px; color:#696969;">CIA operative James Silva leads a small but lethal paramilitary team on an urgent and dangerous mission. They must transport a foreign intelligence asset from an American embassy in Southeast Asia to an airfield for extraction -- a distance of 22 miles. Silva and the soldiers soon find themselves in a race against time as the city's military, police and street gangs close in to reclaim the asset.</h4>
+        <h1 class="showcase-heading">Rocketman</h1>
+        <h4 style="margin-left:40px; margin-right:60px; color:#696969;">Young Reginald Dwight changes his name to Elton John and collaborates with singer-songwriter Bernie Taupin to become one of the most iconic figures in pop history. Set to his most beloved songs, it's the epic musical story of Elton John, his breakthrough years in the 1970s and his fantastical transformation from shy piano prodigy to international superstar.</h4>
 
 
     </section>
     <!--Top-10---------------------->
     <section style="margin-left:300px;">
-        <iframe width="800" height="500" src="https://www.youtube.com/embed/eJU6S5KOsNI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="800" height="500" src="https://www.youtube.com/embed/S3vO8E2e6G0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     
@@ -67,7 +64,7 @@
 
     <!--footer------------------>
     <footer>
-        <p style="text-align: center;">"If you’re chaos I think I might be worse."</p>
+        <p>“It's going to be a wild ride.”</p>
     </footer>
     <!--slider-script-->
     <script>
@@ -84,3 +81,6 @@
 </body>
 
 </html>
+
+
+

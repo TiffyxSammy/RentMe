@@ -22,7 +22,7 @@
     <!--navigation-------------->
     <nav>
         <!--logo--------------->
-        <a href="#" class="logo">
+        <a href="index.php" class="logo">
             <img src="../images/favicon.jpg" />
         </a>
         <!--menu--btn----------------->
@@ -32,13 +32,12 @@
         </label>
         <!--menu-------------->
         <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../movies.html">Movies</a></li>
-            <li><a href="../tv_shows.html">TV Shows</a></li>
-            <li><a href="../favorites.html">Premium</a></li>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="../movies.php">Movies</a></li>
+            <li><a href="../tv_shows.php">TV Shows</a></li>
             <li><a href="../hangman.html">Hangman</a></li>
-            <li><a href="cart.php">Cart</a></li>
-            <li><a href="userAccount.php">Account</a></li>
+            <li><a href="../cart.php">Cart</a></li>
+            <li><a href="../userAccount.php">Account</a></li>
         </ul>
         <!--search------------->
         <div class="search">
@@ -50,14 +49,14 @@
     <section id="main">
         <!--showcase----------------------->
         <!--heading------------->
-        <h1 class="showcase-heading">Easy A</h1>
-        <h4 style="margin-left:40px; margin-right:60px; color:#696969;">Prompted by her popular best friend to spill details of her boring weekend, Olive (Emma Stone), a clean-cut teen, decides to spice things up by telling a little lie about losing her virginity. When the high-school busybody (Amanda Bynes) overhears the conversation and spreads it all over campus, Olive is suddenly notorious but for the wrong reasons.</h4>
+        <h1 class="showcase-heading">The Devil Wears Prada</h1>
+        <h4 style="margin-left:40px; margin-right:60px; color:#696969;">Andy (Anne Hathaway) is a recent college graduate with big dreams. Upon landing a job at prestigious Runway magazine, she finds herself the assistant to diabolical editor Miranda Priestly (Meryl Streep). Andy questions her ability to survive her grim tour as Miranda's whipping girl without getting scorched.</h4>
 
 
     </section>
     <!--Top-10---------------------->
     <section style="margin-left:300px;">
-        <iframe width="800" height="500" src="https://www.youtube.com/embed/KNbPnqyvItk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="800" height="500" src="https://www.youtube.com/embed/6ZOZwUQKu3E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     
@@ -67,7 +66,7 @@
 
     <!--footer------------------>
     <footer>
-        <p>“I used to be anonymous, invisible to the opposite sex. If Google Earth were a guy, he couldn't find me if I was dressed up as a 10-story building.”</p>
+        <p style="text-align: center;"> “Is there some reason that my coffee isn’t here? Has she died or something?”</p>
     </footer>
     <!--slider-script-->
     <script>

@@ -22,7 +22,7 @@
     <!--navigation-------------->
     <nav>
         <!--logo--------------->
-        <a href="#" class="logo">
+        <a href="index.php" class="logo">
             <img src="../images/favicon.jpg" />
         </a>
         <!--menu--btn----------------->
@@ -32,13 +32,12 @@
         </label>
         <!--menu-------------->
         <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../movies.html">Movies</a></li>
-            <li><a href="../tv_shows.html">TV Shows</a></li>
-            <li><a href="../favorites.html">Premium</a></li>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="../movies.php">Movies</a></li>
+            <li><a href="../tv_shows.php">TV Shows</a></li>
             <li><a href="../hangman.html">Hangman</a></li>
-            <li><a href="cart.php">Cart</a></li>
-            <li><a href="userAccount.php">Account</a></li>
+            <li><a href="../cart.php">Cart</a></li>
+            <li><a href="../userAccount.php">Account</a></li>
         </ul>
         <!--search------------->
         <div class="search">
@@ -50,14 +49,16 @@
     <section id="main">
         <!--showcase----------------------->
         <!--heading------------->
-        <h1 class="showcase-heading">The Office</h1>
-        <h4 style="margin-left:40px; margin-right:60px; color:#696969;">A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium. A mediocre paper company in the hands of Scranton, PA branch manager Michael Scott. ... Some of these workers are Michael Scott, the boss, who isn't too bright or funny.</h4>
+        <h1 class="showcase-heading">Game of Thrones</h1>
+        <h4 style="margin-left:40px; margin-right:60px; color:#696969;">In the mythical continent of Westeros, several powerful families fight for control of the Seven Kingdoms. As conflict erupts in the kingdoms of men, an ancient enemy rises once again to threaten them all. Meanwhile, the last heirs of a recently usurped dynasty plot to take back their homeland from across the Narrow Sea.
+
+            —Sam Gray</h4>
 
 
     </section>
     <!--Top-10---------------------->
     <section style="margin-left:300px;">
-        <iframe width="800" height="500" src="https://www.youtube.com/embed/gO8N3L_aERg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="800" height="500" src="https://www.youtube.com/embed/rlR4PJn8b8I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     
@@ -67,7 +68,7 @@
 
     <!--footer------------------>
     <footer>
-        <p style="text-align: center;">“Would I rather be feared or loved? Easy. Both. I want people to be afraid of how much they love me.”</p>
+        <p style="text-align: center;">“Never forget what you are. The rest of the world will not. Wear it like armor, and it can never be used to hurt you.”</p>
     </footer>
     <!--slider-script-->
     <script>

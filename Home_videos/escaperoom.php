@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html>
 
@@ -22,7 +20,7 @@
     <!--navigation-------------->
     <nav>
         <!--logo--------------->
-        <a href="#" class="logo">
+        <a href="index.php" class="logo">
             <img src="../images/favicon.jpg" />
         </a>
         <!--menu--btn----------------->
@@ -32,13 +30,12 @@
         </label>
         <!--menu-------------->
         <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../movies.html">Movies</a></li>
-            <li><a href="../tv_shows.html">TV Shows</a></li>
-            <li><a href="../favorites.html">Premium</a></li>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="../movies.php">Movies</a></li>
+            <li><a href="../tv_shows.php">TV Shows</a></li>
             <li><a href="../hangman.html">Hangman</a></li>
-            <li><a href="cart.php">Cart</a></li>
-            <li><a href="userAccount.php">Account</a></li>
+            <li><a href="../cart.php">Cart</a></li>
+            <li><a href="../userAccount.php">Account</a></li>
         </ul>
         <!--search------------->
         <div class="search">
@@ -50,14 +47,14 @@
     <section id="main">
         <!--showcase----------------------->
         <!--heading------------->
-        <h1 class="showcase-heading">The Morning Show</h1>
-        <h4 style="margin-left:40px; margin-right:60px; color:#696969;">“The Morning Show” is an unapologetically candid drama that looks at the power dynamics between women and men, and women and women, in the workplace.</h4>
+        <h1 class="showcase-heading">Escape Room</h1>
+        <h4 style="margin-left:40px; margin-right:60px; color:#696969;">Six adventurous strangers travel to a mysterious building to experience the escape room -- a game where players compete to solve a series of puzzles to win $10,000. What starts out as seemingly innocent fun soon turns into a living nightmare as the four men and two women discover each room is an elaborate trap that's part of a sadistic game of life or death.</h4>
 
 
     </section>
     <!--Top-10---------------------->
     <section style="margin-left:300px;">
-        <iframe width="800" height="500" src="https://www.youtube.com/embed/ZPYUpfIoM9w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="800" height="500" src="https://www.youtube.com/embed/6dSKUoV0SNI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     
@@ -67,7 +64,7 @@
 
     <!--footer------------------>
     <footer>
-        <p style="text-align: center;">“Partnership is beautiful in whatever form it comes however long it lasts.”</p>
+        <p>“They're watching us! They know every move that we're making!”</p>
     </footer>
     <!--slider-script-->
     <script>
