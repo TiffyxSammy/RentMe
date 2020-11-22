@@ -24,7 +24,7 @@ include('database.php');
     <!--navigation-------------->
     <nav>
         <!--logo--------------->
-        <a href="index.html" class="logo">
+        <a href="index.php" class="logo">
             <img src="images/favicon.jpg" />
         </a>
         <!--menu--btn----------------->
