@@ -21,7 +21,7 @@
     <!--navigation-------------->
     <nav>
         <!--logo--------------->
-        <a href="index.php" class="logo">
+        <a href="../index.php" class="logo">
             <img src="../images/favicon.jpg" />
         </a>
         <!--menu--btn----------------->
