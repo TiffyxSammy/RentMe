@@ -26,15 +26,14 @@
         <!--navigation-------------->
         <nav>
           <!--logo--------------->
-          <a href="index.html" class="logo">
+          <a href="index.php" class="logo">
               <img src="images/favicon.jpg" />
           </a>
           <!--menu-------------->
           <ul class="menu">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="movies.html">Movies</a></li>
-              <li><a href="tv_shows.html">TV Shows</a></li>
-              <li><a href="favorites.html">Premium</a></li>
+              <li><a href="index.php">Home</a></li>
+              <li><a href="movies.php">Movies</a></li>
+              <li><a href="tv_shows.php">TV Shows</a></li>
               <li><a href="hangman.html">Hangman</a></li>
               <li><a href="cart.php">Cart</a></li>
               <li><a href="userAccount.php">Account</a></li>
@@ -46,7 +45,7 @@
               <i class="fas fa-search"></i>
           </div>
       </nav>
-      <h2><a href="index.html"><img src="images/favicon.jpg" class="logo"></a></h2>
+      <h2><a href="index.php"><img src="images/favicon.jpg" class="logo"></a></h2>
       <h2>Secure Checkout</h2>
         <div class="row">
           <div class="firstcol">
