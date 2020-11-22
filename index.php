@@ -25,7 +25,7 @@ include('database.php');
     <!--navigation-------------->
     <nav>
         <!--logo--------------->
-        <a href="index.html" class="logo">
+        <a href="index.php" class="logo">
             <img src="images/favicon.jpg" />
         </a>
         <!--menu--btn----------------->
@@ -38,7 +38,6 @@ include('database.php');
             <li><a href="index.php">Home</a></li>
             <li><a href="movies.php">Movies</a></li>
             <li><a href="tv_shows.php">TV Shows</a></li>
-            <li><a href="favorites.html">Premium</a></li>
             <li><a href="cart.php">Cart</a></li>
             <li><a href="userAccount.php">Account</a></li>
         </ul>
