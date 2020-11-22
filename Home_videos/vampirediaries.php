@@ -22,7 +22,7 @@
     <!--navigation-------------->
     <nav>
         <!--logo--------------->
-        <a href="#" class="logo">
+        <a href="index.php" class="logo">
             <img src="../images/favicon.jpg" />
         </a>
         <!--menu--btn----------------->
@@ -32,13 +32,12 @@
         </label>
         <!--menu-------------->
         <ul class="menu">
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="../movies.html">Movies</a></li>
-            <li><a href="../tv_shows.html">TV Shows</a></li>
-            <li><a href="../favorites.html">Premium</a></li>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="../movies.php">Movies</a></li>
+            <li><a href="../tv_shows.php">TV Shows</a></li>
             <li><a href="../hangman.html">Hangman</a></li>
-            <li><a href="cart.php">Cart</a></li>
-            <li><a href="userAccount.php">Account</a></li>
+            <li><a href="../cart.php">Cart</a></li>
+            <li><a href="../userAccount.php">Account</a></li>
         </ul>
         <!--search------------->
         <div class="search">
@@ -50,14 +49,14 @@
     <section id="main">
         <!--showcase----------------------->
         <!--heading------------->
-        <h1 class="showcase-heading">Trolls World Tour</h1>
-        <h4 style="margin-left:40px; margin-right:60px; color:#696969;">Poppy and Branch discover that there are six different troll tribes scattered over six different lands. Each tribe is also devoted to six different kinds of music -- funk, country, techno, classical, pop and rock. When rockers Queen Barb and King Thrash set out to destroy the other music, Poppy and Branch embark on a daring mission to unite the trolls and save the diverse melodies from becoming extinct.</h4>
+        <h1 class="showcase-heading">The Vampire Diaries</h1>
+        <h4 style="margin-left:40px; margin-right:60px; color:#696969;">It follows the life of Elena Gilbert (Nina Dobrev), a teenage girl who has just lost both parents in a car accident, as she falls in love with a 162-year-old vampire named Stefan Salvatore (Paul Wesley). ... Both brothers attempt to protect Elena as they face various villains and threats to their town, including Katherine.</h4>
 
 
     </section>
     <!--Top-10---------------------->
     <section style="margin-left:300px;">
-        <iframe width="800" height="500" src="https://www.youtube.com/embed/yP86-TR6IME" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="800" height="500" src="https://www.youtube.com/embed/BmVmhjjkN4E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
     
@@ -67,7 +66,7 @@
 
     <!--footer------------------>
     <footer>
-        <p style="text-align: center;">“Real harmony takes lots of voices. Different voices. ”</p>
+        <p style="text-align: center;">"You better watch your back because I may just need to go get a hero hairdo of my own and steal your thunder."</p>
     </footer>
     <!--slider-script-->
     <script>
