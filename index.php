@@ -35,9 +35,9 @@ include('database.php');
         </label>
         <!--menu-------------->
         <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="movies.html">Movies</a></li>
-            <li><a href="tv_shows.html">TV Shows</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="movies.php">Movies</a></li>
+            <li><a href="tv_shows.php">TV Shows</a></li>
             <li><a href="favorites.html">Premium</a></li>
             <li><a href="cart.php">Cart</a></li>
             <li><a href="userAccount.php">Account</a></li>
