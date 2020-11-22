@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Hangman</title>
+    <link rel="shortcut icon" href="images/favicon.jpg">
+    <link rel="stylesheet" type="text/css" href="hangman.css">
+    <script type="text/javascript" src="hangman.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+  </head>
+  <body>
+        <!--navigation-------------->
+        <nav>
+          <!--logo--------------->
+          <a href="index.html" class="logo">
+              <img src="images/favicon.jpg" />
+          </a>
+          <!--menu-------------->
+          <ul class="menu">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="movies.html">Movies</a></li>
+              <li><a href="tv_shows.html">TV Shows</a></li>
+              <li><a href="favorites.html">Premium</a></li>
+              <li><a href="cart.html">Cart</a></li>
+              <li><a href="userAccount.php">Account</a></li>
+              <li><a href="hangman.html">Hangman</a></li>
+          </ul>
+          <!--search------------->
+      </nav>
+      <div id="hangm">
+
+        <div style="height: 2em; margin-bottom: 3em;margin-top:6em;">
+            <div id="hangm_end" class="h"></div>
+        </div>
+
+        <div id="hangm_animation">
+            <div id="hangm_2" class="h pole_h"></div>
+            <div id="hangm_1" class="h pole_v"></div>
+            <div id="hangm_3" class="h rope"></div>
+            <div id="hangm_4" class="h man_head"></div>
+            <div id="hangm_5" class="h man_upper"></div>
+            <div id="hangm_6" class="h man_lower"></div>
+        </div>
+
+        <div style="height: 2em;">
+            <div id="hangm_guesses" class="h"></div>
+        </div>
+        <form>
+            <div id="hangm_guessbox" style="height: 8em;" class="h">
+                <div style="height: 4em;">
+                    RentMe Hangman: Guess the Movie or TV Show!<div id="hangm_word"></div>
+                </div>
+                <input id="guess" onkeyup="Hangman.guess(this.value); this.value=''; return false;" type="text"
+                    placeholder="">
+            </div>
+            <div class="col-sm-3">
+                <button type="button" id="btn-start" class="btn-lg btn-info"
+                    onclick="Hangman.reset(); return false;">New Game</button>
+            </div>
+        </form>
+    </div>
+  </body>
+</html>
