@@ -59,17 +59,18 @@ CREATE TABLE `cart` (
   `categoryID` int(11) NOT NULL,
   `productName` varchar(255) NOT NULL,
   `productPrice` decimal(10,0) NOT NULL,
-  `url` varchar(1000) NOT NULL
+  `url` varchar(1000) NOT NULL,
+  `href` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `cart`
 --
 
-INSERT INTO `cart` (`productID`, `categoryID`, `productName`, `productPrice`, `url`) VALUES
-(1, 2, 'Madame Secretary', '5', 'images/madam.jpg'),
-(2, 1, 'Argo', '5','images/argo.jpg'),
-(3, 1, 'A Star is Born', '5', 'images/astar.jpg');
+INSERT INTO `cart` (`productID`, `categoryID`, `productName`, `productPrice`, `url`, `href`) VALUES
+(1, 2, 'Madame Secretary', '5', 'images/madam.jpg', 'Home_videos/madamsec.php'),
+(2, 1, 'Snowden', '5','images/s.jpg', 'Home_videos/snowden.php' ),
+(3, 1, 'A Star is Born', '5', 'images/astar.jpg', 'Home_videos/escaperoom.php');
 
 -- --------------------------------------------------------
 
