@@ -1,6 +1,6 @@
 <?php
 
-include('navBar.php');
+session_start();
 
 $username = $_SESSION['username'];
 
