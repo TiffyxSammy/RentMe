@@ -49,7 +49,7 @@ if (isset($_POST['login'])) {
 
     if (checkLogin($db, $username, $password)) {
         $_SESSION['username'] = $username;
-        header("Location: ../index.html");
+        header("Location: ../index.php");
     } else {
         echo "The username or password is incorrect";
     }
