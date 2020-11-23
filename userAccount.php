@@ -57,11 +57,16 @@
     </section>
     <!--Documentaries---------------------->
     <section id="latest">
+        <a style="color: black;" href="Account/viewProfile.php">
+            <h2 class="trending-now">View Profile</h2>
+        </a>
+    </section>
+
+    <section id="latest">
         <a style="color: black;" href="Account/updateProfile.php">
             <h2 class="trending-now">Update</h2>
         </a>
     </section>
-
 
     <section id="latest">
         <a style="color: black;" href="Account/deleteAccount.php">
