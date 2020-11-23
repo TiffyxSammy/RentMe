@@ -189,6 +189,7 @@ session_start();
             </select><br>
 
             <input type="submit" value="Register" name="register"></input>
+            <a style="margin-left: 160px;" href="login.php">Have an Account?</a>
         </form>
     </div>
 </body>
