@@ -65,23 +65,23 @@ $users = $statement->fetchAll();
             <table>
                 <?php foreach ($users as $user) : ?>
                     <tr>
-                        <th>Username </th>
+                        <th>Username: </th>
                         <td><?php echo $user['username']; ?></td>
                     </tr>
                     <tr>
-                        <th>First Name</th>
+                        <th>First Name:</th>
                         <td><?php echo $user['firstName']; ?></td>
                     </tr>
                     <tr>
-                        <th>Last Name</th>
+                        <th>Last Name:</th>
                         <td><?php echo $user['lastName']; ?></td>
                     </tr>
                     <tr>
-                        <th>Email</th>
+                        <th>Email:</th>
                         <td><?php echo $user['emailAddress']; ?></td>
                     </tr>
                     <tr>
-                        <th>Birthday</th>
+                        <th>Birthday:</th>
                         <td><?php echo $user['monthBday']; ?>
                             <?php echo $user['dayBday']; ?>,
                             <?php echo $user['yearBday']; ?></td>
