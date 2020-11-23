@@ -19,7 +19,9 @@ section#hangman {
 }
 
 #hangm {
-  text-align: center;
+  float: none;
+  padding-right: 80px;
+  padding-top: 60px;
 }
 
 .h {
@@ -131,10 +133,10 @@ h3 {
   border: 2px solid black;
 }
 select, input {
-  width: 100%;
+  width: 48%;
   border: 2px solid black;
   margin-bottom: 20px;
-  padding: 12px;
+  padding: 13px;
   border-radius: 3px;
 }
 label {
