@@ -56,30 +56,30 @@
     <main>
   <table>
   <tr>
-      <th>Product Code</th>
+      <th>Movie Image</th>
       <th>Movie Title</th>
       <th>Price ($)</th>
-      <th></th>
+      <th class="first"></th>
   <?php 
   $productTotal = 0;
   foreach($products as $product):?>
   <tr>
  
-      <td><?php echo $product['productID']?></td>
-      <td><?php echo $product['productName']?></td>
-      <td>$<?php echo $product['productPrice']?></td>
-      <?php $productTotal += $product['productPrice']?>
-      <td id="lasttd"><form action="delete.php" method="post">
-      <input type="hidden" name="product_id" value=<?php echo $product['productID']?>>
-      <input id="delete" type="submit" class="dltbtn" value="Delete">
-      </form></td>
+    <td><a href="<?php echo $product['href']?>"><img src="<?php echo $product['url']?>"></a>
+    <td><?php echo $product['productName']?></td>
+    <td>$<?php echo $product['productPrice']?></td>
+    <?php $productTotal += $product['productPrice']?>
+    <td id="lasttd"><form action="delete.php" method="post">
+    <input type="hidden" name="product_id" value=<?php echo $product['productID']?>>
+    <input id="delete" type="submit" class="dltbtn" value="Remove Item">
+    </form></td>
  
     </tr>
   <?php endforeach;?>
   <tr>
-                <td>Total</td>
-                <td></td>
-                <td>$<?php echo $productTotal ?></td>
+                <td class="last">Total</td>
+                <td class="last"></td>
+                <td class="last">$<?php echo $productTotal ?></td>
 
 
             </tr>
