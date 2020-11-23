@@ -48,7 +48,7 @@
         </ul>
         <!--search------------->
         <div class="search">
-            <input type="text" />
+            <input style="margin-top:20px;" type="text" placeholder="Search"/>
             <!--search-icon----------->
             <i class="fas fa-search"></i>
         </div>
