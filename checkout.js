@@ -68,6 +68,6 @@ function validateForm() {
     }
     if(flag == true){
         document.getElementById("form").submit();
-        alert("Thank you for your order! An email confirmation will be sent to you shortly.")
+        alert("Thank you for your money. We are not sending anything :) Have a good day!")
     }
 }
