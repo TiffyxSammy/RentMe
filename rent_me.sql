@@ -68,12 +68,6 @@ CREATE TABLE `cart` (
 --
 
 INSERT INTO `cart` (`productID`, `categoryID`, `productName`, `productPrice`, `url`, `href`) VALUES
-(1, 2, 'Madame Secretary', '5', 'images/madam.jpg', 'Home_videos/madamsec.php'),
-(2, 1, 'Snowden', '5', 'images/snowden.jpg', 'Home_videos/snowden.php'),
-(3, 1, 'Escape Room', '5', 'images/escaperoom.jpg', 'Home_videos/escaperoom.php'),
-(8, 2, 'Criminal Minds', '5', 'images/criminalminds.jpg', 'Home_videos/criminalminds.php'),
-(15, 1, 'Lilo and Stitch','5', 'images/lilo.jpg', 'Home_videos/lilo&stitch.php'),
-(20, 2, 'Lucifer', '5', 'images/lucifer.jpg', 'Home_videos/lucifer.php');
 
 -- --------------------------------------------------------
 
