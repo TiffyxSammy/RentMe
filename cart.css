@@ -239,7 +239,7 @@ footer{
     justify-content: space-around;
     align-items: center;
     border-top: 1px solid rgba(0,0,0,0.1);
- 
+
 }
 footer p{
     color:#5e5e5e;
@@ -277,7 +277,7 @@ nav .menu-btn{
         padding:25px;
         border:1px solid rgba(38,38,38,0.03);
     }
- 
+
     nav .menu-icon{
         cursor: pointer;
         float: right;
@@ -312,7 +312,7 @@ nav .menu-btn{
     }
     nav .menu-btn:checked ~ .menu-icon .nav-icon{
         background: transparent;
- 
+
     }
     nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
         transform: rotate(-45deg);
@@ -369,7 +369,7 @@ nav .menu-btn{
     }
 }
 table {
-    font-size: 40px;
+    font-size: 20px;
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 50%;
@@ -377,7 +377,7 @@ table {
 }
 td, th {
     text-align: left;
-    padding: 10px;
+    padding: 50px;
 }
 input {
     width: 100%;
@@ -391,7 +391,7 @@ input {
     color: whitesmoke;
     background-color:black;
     border-color: black;
-    width: 43%;
+    width: 52%;
     padding: 8px;
     margin: 14px 5px 20px;
     border-radius: 100px;
@@ -400,8 +400,8 @@ input {
     background-color: limegreen;
   }
   main {
-    padding-top:100px;
-    padding-left: 840px;
+    padding-top:50px;
+    padding-left: 450px;
 }
 .dltbtn {
     color: whitesmoke;
