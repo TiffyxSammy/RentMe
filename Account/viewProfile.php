@@ -26,8 +26,9 @@ $users = $statement->fetchAll();
     <!--favicon-->
     <link rel="shortcut icon" href="favicon.jpg" />
 </head>
-
-<h2> View User Profile </h2>
+<?php foreach ($users as $user) : ?>
+<h2> <?php echo "Welcome to your profile " . $user['firstName']?><?php echo "," ?> </h2>
+<?php endforeach; ?>
 
 <body scroll="no" style="overflow: hidden">
 
