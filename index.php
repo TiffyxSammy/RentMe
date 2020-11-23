@@ -43,12 +43,53 @@ include('database.php');
             <li><a href="userAccount.php">Account</a></li>
         </ul>
         <!--search------------->
-        <div class="search">
-            <input type="text" placeholder="Search" />
+        <<div class="search">
+            <form name = "fromSearch" method = "post" action="">
+            <input type="text" name="searched" placeholder="Search" />
             <!--search-icon----------->
-            <i class="fas fa-search"></i>
+            <button style="float:right"><i class="fa fa-search"></i></button>
+            </form>
+
         </div>
     </nav>
+
+    <?php       
+                
+                if(empty($_POST['searched'])) {
+                }
+                else {
+                $searched = $_POST['searched'];
+
+                $sql = "SELECT * FROM products WHERE productName LIKE \"%$searched%\"";
+                $search = $db->query($sql);
+
+                if($search->rowCount() == 0){
+                    echo "<section id=\"main\">";
+                    echo "<h1 class=\"showcase-heading\">Uh oh!</h1>";
+                    echo "<p>Whoops! We cannot find the droids you're looking for... This is awkward.</p>";
+                }
+                else {
+                    echo "<section id=\"main\">";
+                    echo "<h1 class=\"showcase-heading\">Here you go!</h1>";
+                    echo "<ul id=\"autoWidth\" class=\"cs-hidden\">";
+                  }
+                 
+                  foreach($search as $srch):?>
+                    <li class="item-a">
+                    <div class="latest-box">   
+                        <div class="latest-b-img">
+                            <a href="<?php echo $srch['href']?>">
+                            <img src="<?php echo $srch['url']?>"/>
+                        </a>
+                        </div>
+                        </div>
+                    </li>
+            
+    <?php endforeach?>
+                <?php }?>
+
+        </section>
+
     <section id="main">
         <!--showcase----------------------->
         <!--heading------------->
@@ -66,9 +107,37 @@ include('database.php');
                                 <img src="<?php echo $featured['url']?>"/>
                             </a>
                             </div>
-                        </li>;
+                            <form name = "add" method = "post" action="">
+                                <input type="hidden" name="addCart" value="<?php echo $featured['productName']?>" />
+                                <button type="submit"> $<?php echo $featured['productPrice']?> <i class="fa fa-shopping-cart"></i></button>
+                            </form>
+                        </li>
             <?php endforeach?>
+            <?php
 
+                if(!empty($_POST['addCart'])){
+                $added = $_POST['addCart'];
+
+                //echo "<p> $added </p>"; 
+
+                $sql = "SELECT * FROM products WHERE productName = \"$added\"";
+                $add = $db->prepare($sql);
+                $add->execute();
+
+                while($cartAdd = $add->fetch(PDO::FETCH_BOTH)){
+                $pID = $cartAdd['productID'];
+                $cID = $cartAdd['categoryID'];
+                $pName = $added;
+                $price = $cartAdd['productPrice'];
+                $url = $cartAdd['url'];
+                $href = $cartAdd['href'];
+
+                $sql = "INSERT INTO cart (productID, categoryID, productName, productPrice, url, href) VALUES(\"$pID\", \"$cID\", \"$pName\", \"$price\", \"$url\", \"$href\")";
+                $search = $db->query($sql);
+                }
+            }
+        ?>
+    
 
     </section>
     <!--Top-10---------------------->
@@ -88,11 +157,40 @@ include('database.php');
                             <div class="latest-b-img">
                             <a href="<?php echo $top['href']?>">
                             <img src="<?php echo $top['url']?>">
+                            
                         </a>
                         </div>
                     </div>
-                    </li>;
+                    <form name = "add" method = "post" action="">
+                        <input type="hidden" name="addCart" value="<?php echo $top['productName']?>" />
+                            <button type="submit"> $<?php echo $top['productPrice']?> <i class="fa fa-shopping-cart"></i></button>
+                       </form>
+                    </li>
             <?php endforeach?>
+            <?php
+
+                if(!empty($_POST['addCart'])){
+                $added = $_POST['addCart'];
+
+                //echo "<p> $added </p>"; 
+
+                $sql = "SELECT * FROM products WHERE productName = \"$added\"";
+                $add = $db->prepare($sql);
+                $add->execute();
+
+                while($cartAdd = $add->fetch(PDO::FETCH_BOTH)){
+                $pID = $cartAdd['productID'];
+                $cID = $cartAdd['categoryID'];
+                $pName = $added;
+                $price = $cartAdd['productPrice'];
+                $url = $cartAdd['url'];
+                $href = $cartAdd['href'];
+
+                $sql = "INSERT INTO cart (productID, categoryID, productName, productPrice, url, href) VALUES(\"$pID\", \"$cID\", \"$pName\", \"$price\", \"$url\", \"$href\")";
+                $search = $db->query($sql);
+                }
+            }
+        ?>
 
 
             <!--slide-box-2------------------>
@@ -129,8 +227,36 @@ include('database.php');
                         </a>
                         </div>
                     </div>
-                    </li>;
+                    <form name = "add" method = "post" action="">
+                        <input type="hidden" name="addCart" value="<?php echo $trend['productName']?>" />
+                            <button type="submit"> $<?php echo $trend['productPrice']?> <i class="fa fa-shopping-cart"></i></button>
+                       </form>
+                    </li>
             <?php endforeach?>
+             <?php
+
+                if(!empty($_POST['addCart'])){
+                $added = $_POST['addCart'];
+
+                //echo "<p> $added </p>"; 
+
+                $sql = "SELECT * FROM products WHERE productName = \"$added\"";
+                $add = $db->prepare($sql);
+                $add->execute();
+
+                while($cartAdd = $add->fetch(PDO::FETCH_BOTH)){
+                $pID = $cartAdd['productID'];
+                $cID = $cartAdd['categoryID'];
+                $pName = $added;
+                $price = $cartAdd['productPrice'];
+                $url = $cartAdd['url'];
+                $href = $cartAdd['href'];
+
+                $sql = "INSERT INTO cart (productID, categoryID, productName, productPrice, url, href) VALUES(\"$pID\", \"$cID\", \"$pName\", \"$price\", \"$url\", \"$href\")";
+                $search = $db->query($sql);
+                }
+            }
+        ?>
         </ul>
     </section>
 
