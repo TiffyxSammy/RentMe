@@ -301,7 +301,7 @@ include('database.php');
                 <img src="images/devilwears.jpg">
             </div>
             <!--text--------->
-            <a href="Home_videos/devilwears.html">
+            <a href="Home_videos/devilwears.php">
                 Director: David Frankel
             </a>
         </div>
@@ -312,7 +312,7 @@ include('database.php');
                 <img src="images/murdermystery.jpg">
             </div>
             <!--text--------->
-            <a href="Home_videos/mudermystery.html">
+            <a href="Home_videos/mudermystery.php">
                 Director: Kyle Newacheck
             </a>
         </div>
@@ -323,7 +323,7 @@ include('database.php');
                 <img src="images/harry.jpeg">
             </div>
             <!--text--------->
-            <a href="Home_videos/harrypotterr.html">
+            <a href="Home_videos/harrypotterr.php">
                 Director: Mike Newell
             </a>
         </div>
@@ -334,7 +334,7 @@ include('database.php');
                 <img src="images/lilo.jpg">
             </div>
             <!--text--------->
-            <a href="Home_videos/lilo&stitch.html">
+            <a href="Home_videos/lilo&stitch.php">
                 Director: Chris Sanders
             </a>
         </div>
@@ -345,7 +345,7 @@ include('database.php');
                 <img src="images/mile22.jpg">
             </div>
             <!--text--------->
-            <a href="Home_videos/mile22.html">
+            <a href="Home_videos/mile22.php">
                 Director: Peter Berg
             </a>
         </div>
@@ -356,7 +356,7 @@ include('database.php');
                 <img src="images/lala.jpg">
             </div>
             <!--text--------->
-            <a href="Home_videos/lalaland.html">
+            <a href="Home_videos/lalaland.php">
                 Director: Damien Chazelle
             </a>
         </div>
@@ -367,7 +367,7 @@ include('database.php');
                 <img src="images/argo.jpg">
             </div>
             <!--text--------->
-            <a href="Home_videos/argo.html">
+            <a href="Home_videos/argo.php">
                 Director: Ben Affleck
             </a>
         </div>
@@ -378,7 +378,7 @@ include('database.php');
                 <img src="images/astar.jpg">
             </div>
             <!--text--------->
-            <a href="Home_videos/astarisborn.html">
+            <a href="Home_videos/astarisborn.php">
                 Director: Bradley Cooper
             </a>
         </div>
