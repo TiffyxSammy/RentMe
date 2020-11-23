@@ -1,7 +1,7 @@
 <?php
         session_start();
         include_once('Account/config.php');
-
+        include('database.php');
         ?>
 
 <!DOCTYPE html>
@@ -9,7 +9,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Rent Me</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/lightslider.css" />
     <!--js-link-->
@@ -19,6 +19,7 @@
     <link rel="shortcut icon" href="images/favicon.jpg" />
     <!--using FontAwesome-->
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -43,7 +44,17 @@
             <li><a href="userAccount.php">Account</a></li>
         </ul>
         <!--search------------->
-        <?php       
+        <<div class="search">
+            <form name = "fromSearch" method = "post" action="">
+            <input type="text" name="searched" placeholder="Search" />
+            <!--search-icon----------->
+            <button style="float:right"><i class="fa fa-search"></i></button>
+            </form>
+
+        </div>
+    </nav>
+
+    <?php       
                 
                 if(empty($_POST['searched'])) {
                 }
@@ -73,10 +84,38 @@
                         </a>
                         </div>
                         </div>
+                        <form name = "add" method = "post" action="">
+                                <input type="hidden" name="addCart" value="<?php echo $srch['productName']?>" />
+                                <button type="submit"> $<?php echo $srch['productPrice']?> <i class="fa fa-shopping-cart"></i></button>
+                            </form>
                     </li>
             
-    <?php endforeach?>
+            <?php endforeach?>
                 <?php }?>
+                <?php
+
+                if(!empty($_POST['addCart'])){
+                $added = $_POST['addCart'];
+
+                //echo "<p> $added </p>"; 
+
+                $sql = "SELECT * FROM products WHERE productName = \"$added\"";
+                $add = $db->prepare($sql);
+                $add->execute();
+
+                while($cartAdd = $add->fetch(PDO::FETCH_BOTH)){
+                $pID = $cartAdd['productID'];
+                $cID = $cartAdd['categoryID'];
+                $pName = $added;
+                $price = $cartAdd['productPrice'];
+                $url = $cartAdd['url'];
+                $href = $cartAdd['href'];
+
+                $sql = "INSERT INTO cart (productID, categoryID, productName, productPrice, url, href) VALUES(\"$pID\", \"$cID\", \"$pName\", \"$price\", \"$url\", \"$href\")";
+                $search = $db->query($sql);
+                }
+            }
+        ?>
 
         </section>
     </nav>
