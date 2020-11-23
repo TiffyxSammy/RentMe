@@ -65,7 +65,7 @@
   foreach($products as $product):?>
   <tr>
  
-    <td><a href="<?php echo $product['href']?>"><img src="<?php echo $product['url']?>"></a>
+    <td><a href="<?php echo $product['href']?>"><img class="pic" src="<?php echo $product['url']?>"></a>
     <td><?php echo $product['productName']?></td>
     <td>$<?php echo $product['productPrice']?></td>
     <?php $productTotal += $product['productPrice']?>
