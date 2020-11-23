@@ -101,6 +101,8 @@ include('config.php');
         <input type="password" name="password"><br>
 
         <input type="submit" value="Login" name="login"></input>
+        
+        <a style="margin-left: 140px;" href="register.php">Don't Have an Account?</a>
 
     </form>
     </div>
