@@ -49,9 +49,8 @@
         <!--search------------->
         <div class="search">
             <form name = "fromSearch" method = "post" action="">
-            <input type="text" name="searched" placeholder="Search" />
+            <input style="margin-top:20px;" type="text" name="searched" placeholder="Search" />
             <!--search-icon----------->
-            <button style="float:right"><i class="fa fa-search"></i></button>
             </form>
 
         </div>

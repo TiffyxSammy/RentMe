@@ -27,13 +27,13 @@ $users = $statement->fetchAll();
     <link rel="shortcut icon" href="favicon.jpg" />
 </head>
 <?php foreach ($users as $user) : ?>
-    <h2> <?php echo "Welcome to your profile, " . $user['firstName'] ?></h2>
+<h2> <?php echo "Welcome to your profile " . $user['firstName']?><?php echo "," ?> </h2>
 <?php endforeach; ?>
 
 <body scroll="no" style="overflow: hidden">
 
-    <!--navigation-------------->
-    <nav>
+ <!--navigation-------------->
+ <nav>
         <!--logo--------------->
         <a href="../index.php" class="logo">
             <img src="../images/favicon.jpg" />
