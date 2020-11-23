@@ -376,7 +376,6 @@ table {
     padding-top: 2000px;
 }
 td, th {
-    border: 2px solid black;
     text-align: left;
     padding: 10px;
 }
@@ -392,7 +391,7 @@ input {
     color: whitesmoke;
     background-color:black;
     border-color: black;
-    width: 50%;
+    width: 43%;
     padding: 8px;
     margin: 14px 5px 20px;
     border-radius: 100px;
@@ -401,7 +400,7 @@ input {
     background-color: limegreen;
   }
   main {
-    padding-top:450px;
+    padding-top:100px;
     padding-left: 840px;
 }
 .dltbtn {
@@ -410,4 +409,17 @@ input {
 }
 .dltbtn:hover{
     background-color: red;
+}
+img {
+    height: 150px;
+    width:90px;
+}
+th{
+    border-bottom: solid black 2px;
+}
+.first {
+    border: none;
+}
+.last {
+    border-top: solid black 2px;
 }
