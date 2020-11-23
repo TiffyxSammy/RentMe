@@ -26,13 +26,13 @@ function validateForm() {
     }
     x=document.forms["form"]["state"].value;
     if(x.length !=2){
-        alert("State must be 2 letters.");
+        alert("Invalid state code. Please try again.");
         flag= false;
         return false;
     }
     x = document.forms["form"]["zip"].value;
     if (x.length != 5) {
-        alert("Zipcode must be five digits.");
+        alert("Invalid zip code. Please try again.");
         flag= false;
         return false;
     }
@@ -62,7 +62,7 @@ function validateForm() {
     }
     x=document.forms["form"]["cvv"].value;
     if(x.length != 3){
-        alert("CVV must be 3 numbers.");
+        alert("Invalid CVV number. Please try again.");
         flag= false;
         return false;
     }
