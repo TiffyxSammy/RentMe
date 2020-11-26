@@ -34,7 +34,6 @@
             <li><a href="../index.php">Home</a></li>
             <li><a href="../movies.php">Movies</a></li>
             <li><a href="../tv_shows.php">TV Shows</a></li>
-            <li><a href="../hangman.html">Hangman</a></li>
             <li><a href="../cart.php">Cart</a></li>
             <li><a href="../userAccount.php">Account</a></li>
         </ul>
@@ -58,7 +57,7 @@
         <iframe width="800" height="500" src="https://www.youtube.com/embed/QkT-HIMSrRk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
 
-    
+
 
 
 
@@ -68,11 +67,11 @@
     </footer>
     <!--slider-script-->
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             $('#autoWidth,#autoWidth2').lightSlider({
                 autoWidth: true,
                 loop: true,
-                onSliderLoad: function () {
+                onSliderLoad: function() {
                     $('#autoWidth,#autoWidth2').removeClass('cS-hidden');
                 }
             });
