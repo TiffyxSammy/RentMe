@@ -1,3 +1,12 @@
+/*
+ * JavaScript Library v3.3.1
+ * https://jquery.org/license
+ * 
+ * Light slider is used to allow movies to rotate on our website. 
+*/
+
+
+
 (function ($, undefined) {
     'use strict';
     var defaults = {
