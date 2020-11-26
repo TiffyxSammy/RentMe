@@ -48,12 +48,12 @@ $users = $statement->fetchAll();
             <li><a href="../index.php">Home</a></li>
             <li><a href="../movies.php">Movies</a></li>
             <li><a href="../tv_shows.php">TV Shows</a></li>
-            <li><a href="../hangman.html">Hangman</a></li>
+           
             <li><a href="../cart.php">Cart</a></li>
             <li><a href="../userAccount.php">Account</a></li>
         </ul>
         <!--search------------->
-        <div class="search">
+        <div class="search2">
             <input type="text" placeholder="Search" />
             <!--search-icon----------->
             <i class="fas fa-search"></i>

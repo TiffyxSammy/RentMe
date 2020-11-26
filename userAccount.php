@@ -44,7 +44,7 @@
             <li><a href="userAccount.php">Account</a></li>
         </ul>
         <!--search------------->
-        <<div class="search">
+        <<div class="search2">
             <form name = "fromSearch" method = "post" action="">
             <input type="text" name="searched" placeholder="Search" />
             </form>

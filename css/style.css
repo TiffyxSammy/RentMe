@@ -2,11 +2,18 @@
 .search input{
     height: 31px;
     width:100%;
-    background-color: transparent;
+    background-color: black;
     border:none;
     outline: none;
 }
 
+.search2 input{
+    height: 31px;
+    width:100%;
+    background-color: transparent;
+    border:none;
+    outline: none;
+}
 
 img{
     height: 38px;
@@ -20,6 +27,21 @@ img{
 }
 
 .search{
+    width:251px;
+    padding: 0px 21px;
+    align-items: center;
+    height: 41px;
+    background-color: black;
+    display: flex;
+    border-radius: 22px;
+    justify-content: center;
+}
+
+.search ::placeholder {
+    color: black;
+  }
+
+.search2{
     width:251px;
     padding: 0px 21px;
     align-items: center;
@@ -76,6 +98,10 @@ nav{
         width: 90%;
         height: 40px;
     }
+    .search2{
+        width: 90%;
+        height: 40px;
+    }
 }
 
 
@@ -127,6 +153,9 @@ nav .menu{
 }
 
 .search i{
+    color:black;
+}
+.search2 i{
     color:#3a3a3a;
 }
 nav .menu li a:hover{
