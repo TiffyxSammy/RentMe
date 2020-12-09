@@ -1,10 +1,11 @@
 
-.search input{
-    height: 31px;
-    width:100%;
-    background-color: black;
-    border:none;
-    outline: none;
+footer{
+    display: flex;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.rentmovie12 {
+    color: gray;
 }
 
 .search2 input{
@@ -15,8 +16,14 @@
     outline: none;
 }
 
-img{
-    height: 38px;
+.search2 i{
+    color:#3a3a3a;
+}
+
+.latest-b-text{
+    width:100%;
+    justify-content: center;
+    display: flex; 
 }
 
 #movies-list{
@@ -26,56 +33,26 @@ img{
     align-items: center;
 }
 
+.search::placeholder {
+    color: black;
+}
+
+.search2{
+    align-items: center;
+    height: 41px;
+}
+
+
 .search{
     width:251px;
     padding: 0px 21px;
     align-items: center;
     height: 41px;
-    background-color: black;
-    display: flex;
-    border-radius: 22px;
-    justify-content: center;
 }
 
-.search ::placeholder {
-    color: black;
-  }
-
-.search2{
-    width:251px;
-    padding: 0px 21px;
-    align-items: center;
-    height: 41px;
-    background-color: rgba(245,245,245,0.8);
-    display: flex;
-    border-radius: 22px;
-    justify-content: center;
-}
-
-.showcase-box img{
-    
-    object-fit: cover;
-    width:100%;
-    object-position: top;
-    height: 100%;
-}
-
-
-nav{
-    width:100%;
-    border:1px solid black;
-    top: 0;
-    align-items: center;
-    z-index: 100;
-    background-color: black; /* navbar color */
-    position: fixed;
-    left: 0;
-    display: flex;
-    justify-content: space-around;
-}
 
 .logo {
-    height: 39px;
+    height: 41px;
 }
 
 .cs-hidden{
@@ -83,51 +60,26 @@ nav{
 }
 
 
-
-@media(max-width:440px){
-    .movies-box a,.movies-box{
-        width: 100%;
-    }
-    .movies-box{
-        flex-direction: column;
-    }
-    .logo img{
-        height: 30px;
-    }
-    .search{
-        width: 90%;
-        height: 40px;
-    }
-    .search2{
-        width: 90%;
-        height: 40px;
-    }
-}
-
-
 .btns a{
-    background-color: blue;
-    margin: 10px;
-    display: flex;
+    font-size: 1.0rem;
     justify-content: center;
     border:none;
     outline: none;
     color: white;
-    width: 130px;
-    height: 40px;
-    align-items: center;
-    font-size: 1rem;
+    width: 128px;
+    height: 39px;
 }
 
-.latest-b-text{
 
-    display: flex;
-    width:100%;
-    flex-direction: column;
-    margin: 10px;
-    justify-content: center;
+.latest-b-text{
     align-items: center;
-    
+    flex-direction: column;
+    margin: 9px;    
+}
+
+.showcase-box img{
+    object-position: top;
+    height: 100%;
 }
 
 nav .menu{
@@ -155,11 +107,10 @@ nav .menu{
 .search i{
     color:black;
 }
-.search2 i{
-    color:#3a3a3a;
-}
+
+
 nav .menu li a:hover{
-    background-color: #242424;
+    background-color: black;
     color:white;
     box-shadow: 5px 11px 30px rgba(53,53,53,0.1);
     transition: all ease 0.2s;
@@ -175,54 +126,76 @@ nav .menu-btn{
 }
 
 .showcase-heading{
-    font-size: 1.2rem;
-    letter-spacing: 1px;
-    color: #1a1a1a;
-    font-weight: 501;
-    padding-left: 30px;
-    text-transform: uppercase;
+    font-weight: 450;
+    padding-left: 28px;
+}
+
+.showcase-heading{
+    font-size: 1.4rem;
+    letter-spacing: 1.0px;
+    color: black;
+}
+
+.rentme1 { 
+    color: gray;
+    margin: auto;
 }
 
 #latest{
     border-top: 1px solid rgba(53,53,53,0.1);
 }
 
-.trending-now{
-    margin: 30px 30px 0px 30px;
+nav{
+    width:100%;
+    align-items: center;
+    z-index: 100;
+    border:1px solid black;
+    top: 0;
+}
 
+.trending-now{
     font-size: 1.3rem;
-    font-weight: 501;
+    font-weight: 488;
+}
+
+.trending-now{
+    margin: 29px 29px 0px 30px;
 }
 
 .movies-box a{
     text-align:center;
-    display: block;
     display: -webkit-box;
     max-width: 80%;
-    text-overflow: ellipsis;
-    color: #3a3a3a;
-    margin: 20px;
-    overflow: hidden;
-    font-weight: 601;
-    -webkit-line-clamp: vertical;
+    color: black;
 }
+
 
 .latest-b-img{
     width:100%;
-    height: 270px;
+    height: 269px;
 }
 
 .latest-b-text strong{
-    color:#3a3a3a;
+    color:gray;
     margin: 0px;
 }
 
+.movierent{
+    margin: auto;
+    width: 20px;
+    color: gray;
+}
 
 .latest-b-text p{
-    color:#979797;
-    margin: 0px;
+    color:gray;
 }
 
+.movies-box a{
+    margin: 20px;
+    overflow: hidden;
+    font-weight: 588;
+    -webkit-line-clamp: vertical;
+}
 
 .movies-heading{
     display: flex;
@@ -230,28 +203,23 @@ nav .menu-btn{
 }
 
 .movies-box{
-    width:300px;
-    box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
-    margin: 20px;
+    width:298px;
+    margin: 23px;
     display: flex;
     justify-content: space-between;
+}
+
+.movies-box{
     align-items: center;
     flex-direction: column;
-    border-radius: 5px;
+    border-radius: 7px;
     overflow: hidden;
-    border-top: 3px solid #292929;
 }
 
 .movies-img img{
-    width: 100%;
-    
+    width: 99%;
     object-fit: cover;
-    height: 100%;
-}
-
-.movies-box:hover{
-    transition: all ease 0.2s;
-    transform: translateY(-10px);
+    height: 99%;
 }
 
 
@@ -262,96 +230,143 @@ nav .menu-btn{
 }
 
 
+@media(max-width:438px){
+    .movies-box{
+        flex-direction: column;
+    }
+    .search2{
+        width: 88%;
+        height: 38px;
+    }
+
+    .search{
+        width: 88%;
+        height: 38px;
+    }
+    .logo img{
+        height: 28px;
+    }
+    .movies-box a,.movies-box{
+        width: 100%;
+    }
+}
+
+
+
+.search2{
+    width:251px;
+    padding: 0px 21px;
+}
+
 
 .btns a:hover{
     background-color: blue;
 }
+
+
 footer{
     justify-content: space-around;
     align-items: center;
-    display: flex;
-    border-top: 1px solid rgba(0,0,0,0.1);
- 
 }
 
 
 @media(max-width:1100px){
-    nav{
-        justify-content: space-between;
-        height: 70px;
-        padding: 0px 10px;
-    }
+    
     nav .menu{
-       display: none;
-        position: absolute;
-        top: 65px;
-        left: 0px;
-        background:black; /* drop down menu color small size */
-        border-bottom:4px solid #242424;
         width:100%;
         padding:0px;
+        background:black; /* drop down menu color small size */
+        border-bottom:6px solid black;
         margin:0px;
     }
+
     .menu li{
         width:100%;
     }
+
     nav .menu li a{
         width: 100%;
-        height: 40px;
-        align-items: center;
+        height: 39px;
         margin: 0px;
-        padding:25px;
-        border:1px solid rgba(38,38,38,0.03);
+    }
+
+
+    nav{
+        justify-content: space-between;
+        height: 69px;
+        padding: 0px 9px;
     }
  
     nav .menu-icon{
+        user-select: none;
+        position: relative;
+        display: block;
         cursor: pointer;
         float: right;
-        padding:28px 20px;
-        position: relative;
-        user-select: none;
-        display: block;
+        padding:29px 21px;
     }
-    nav .menu-icon .nav-icon{
-        background-color: #333333;
-        display: block;
-        height: 2px;
-        position: relative;
-        transition: background 0.2s ease-out;
-        width: 18px;
-    }
+
     nav .menu-icon .nav-icon:before,nav .menu-icon .nav-icon:after{
-        background: #333333;
+    
+        position: absolute;
         content: '';
         display: block;
         height: 100%;
-        position: absolute;
         transition: all ease-out 0.2s;
+        background: #333333;
+
         width: 100%;
     }
     nav .menu-icon .nav-icon:before{
         top:5px;
     }
+
     nav .menu-icon .nav-icon:after{
         top:-5px;
     }
+
     nav .menu-btn:checked ~ .menu-icon .nav-icon{
         background: transparent;
- 
     }
+
+    nav .menu-icon .nav-icon{
+        background-color: #333333;
+        display: block;
+        height: 3px;
+        position: relative;
+        transition: background 0.2s ease-out;
+        width: 19px;
+    }
+
     nav .menu-btn:checked ~ .menu-icon .nav-icon:before{
         transform: rotate(-45deg);
         top: 0;
     }
+
+    nav .menu{
+        display: none;
+         position: absolute;
+         top: 66px;
+         left: 0px;
+     }
+
     nav .menu-btn:checked ~ .menu-icon .nav-icon:after{
         transform: rotate(45deg);
         top: 0;
     }
+
     nav .menu-btn{
         display: none;
     }
+
     nav .menu-btn:checked ~ .menu{
         display: block;
+    }
+
+    nav .menu li a{
+        padding:26px;
+        border:1px solid rgba(38,38,38,0.03);
+        align-items: center;
     }
 }
 
@@ -383,6 +398,15 @@ footer{
         margin: 20px 5px;
     }
 
+}
+
+
+nav{
+    background-color: black; /* navbar color */
+    position: fixed;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
 }
 
 
@@ -427,9 +451,12 @@ a{
 }
 
 .latest-b-img img{
-    width: 100%;
     object-fit: cover;
     height: 100%;
+}
+
+.latest-b-img img{
+    width: 100%;
 }
 
 body{
@@ -439,23 +466,26 @@ body{
 }
 
 .movies-heading h2{
-    font-weight: 401;
-    border: 1px solid rgba(0,0,0,0.06);
-    font-size: 1.7rem;
-    padding: 1px 20px;
+    font-size: 1.4rem;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    background-color: rgba(0,0,0,0.01);
+    padding: 1px 18px;
+}
+
+.movies-heading h2{
+    font-weight: 388;
     margin: 0px;
     width: 100%;
 }
 
 nav .menu li a{
-    height: 41px;
+    height: 39px;
     color:white; /*nav bar text color*/
     letter-spacing: 1px;
     line-height: 43px;
-    font-weight: 502;
+    font-weight: 488;
+}
+
+nav .menu li a{
     margin: 0px;
     font-size: 0.8rem;
     text-transform: uppercase;
@@ -467,7 +497,64 @@ nav .menu li a{
 footer p{
     color:#5e5e5e;
     font-size: 0.9rem;
-    margin: 10px 0px;
+    margin: 11px 1px;
 }
 
 
+.search{
+    background-color: black;
+    justify-content: center;
+    display: flex;
+    border-radius: 23px;
+}
+
+
+.movies22 { 
+    background-color: black;
+    border: gray;
+    text-emphasis: none;
+}
+
+
+
+.search2{
+    background-color: rgba(245,245,245,0.8);
+    display: flex;
+    border-radius: 22px;
+    justify-content: center;
+}
+
+
+
+.search input{
+    height: 31px;
+    border:none;
+    width:100%;
+    background-color: black;
+    outline: none;
+}
+
+img{
+    height: 38px;
+}
+
+
+
+
+.showcase-box img{
+    object-fit: cover;
+    width:100%;
+}
+
+
+.latest-b-text p{
+    margin: 0px;
+}
+
+
+.btns a{
+    background-color: blue;
+    margin: 9px;
+    display: flex;
+    align-items: center;
+}
